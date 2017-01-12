@@ -3,19 +3,19 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
 venue: "Queen's University"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Douglas Library 416 (Electronic Classroom), 93 University Avenue, Kingston, ON"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "To be announced, Kingston, ON"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "ca"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "44.227517, -76.495229"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "Oct 26-27, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "Feb 21-23, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2016-10-26      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2016-10-27        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+startdate: 2017-02-21      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2010-02-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Jeff Stafford", "Hartmut Schmider", "Gang Liu", "Robert Colautti"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 #helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "jeff.stafford@queensu.ca"      # contact email address for host, lead instructor, or whoever else is handling questions
 etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite: 28287518730          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+#eventbrite: 28287518730          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -142,9 +142,9 @@ Software Carpentry staff may need to know in your email. -->
 <h2 id="lesson_mat">Lesson Materials</h2>
 
 <ul>
-  <li><a href="https://cac-staff.github.io/summer-school-2016-R/">R for reproducible science</a></li>
+  <li><a href="http://swcarpentry.github.io/r-novice-gapminder/">R for reproducible science</a></li>
   <li><a href="https://cac-staff.github.io/swc-bash-lesson/">Using the command-line</a></li>
-  <li><a href="https://cac-staff.github.io/summer-school-2016-Git/">Version control with Git</a></li>
+  <li><a href="http://swcarpentry.github.io/git-novice/">Version control with Git</a></li>
 </ul>
 
 
@@ -178,13 +178,19 @@ Software Carpentry staff may need to know in your email. -->
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Programming with R (continued)</td> </tr>
+      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>13:00</td>  <td>Programming with R (continued)</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+	<tr> <td>09:00</td>  <td>Sequencing Applications</td> </tr>
+	<tr> <td>10:30</td>  <td>Coffee</td> </tr>
+	<tr> <td>12:00</td>  <td>Lunch break</td> </tr>
   </div>
 </div>
 
@@ -254,6 +260,12 @@ Software Carpentry staff may need to know in your email. -->
       <li>Resolving conflicts</li>
       <li>Where to host work, and why</li>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
+    </ul>
+  </div>
+	<h3 id="syllabus-ngs">Sequencing Applications</h3>
+    <ul>
+      <li>Working with the Tuxedo suite</li>
+      <li>Picard Tools</li>
     </ul>
   </div>
 </div>
@@ -342,59 +354,15 @@ Software Carpentry staff may need to know in your email. -->
   <div class="row">
     <div class="col-md-4">
       <h4 id="shell-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-      <ol>
-        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
-        <li>Run the installer and follow the steps bellow:
-          <ol>
-            <!-- Git 2.8.2 Setup -->
-            <!-- Information -->
-            <li>Click on "Next".</li>
-            <!-- Select Components -->
-            <li>Click on "Next".</li>
-            <!-- Adjusting your PATH environment -->
-            <li>
-              <strong>
-                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
-              </strong>
-                If you forgot to do this programs that you need for the workshop will not work properly.
-                If this happens rerun the installer and select the appropriate option.
-            </li>
-            <!-- Choosing the SSH executable -->
-            <li>Click on "Next".</li>
-            <!-- Configuring the line ending conversions -->
-            <li>
-              <strong>
-                Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
-              </strong>
-            </li>
-            <!-- Configuring the terminal emulator to use with Git Bash -->
-            <li>
-              <strong>
-                Keep "Use Windows' default console window" selected and click on "Next".
-              </strong>
-            </li>
-            <!-- Configuring experimental performance tweaks -->
-            <li>Click on "Install".</li>
-            <!-- Installing -->
-            <!-- Completing the Git Setup Wizard -->
-            <li>Click on "Finish".</li>
-          </ol>
-        </li>
-        <li>
-          If your "HOME" environment variable is not set (or you don't know what this is):
-          <ol>
-            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
-            <li>
-              Type the following line into the command prompt window exactly as shown:
-              <p><code>setx HOME "%USERPROFILE%"</code></p>
-            </li>
-            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
-            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
-          </ol>
-        </li>
-      </ol>
-      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+      <p>Since Bash is not installed on Windows, we will use a lightweight version
+         called MSYS2 to provide Bash and Git instead. Follow these instructions to 
+         install and setup MSYS2:
+      </p>
+      <ul>
+		<li><p>Download and install MSYS2 from <a href="http://msys2.github2.io">msys2.github.io</a></p></li>
+		<li><p>Open MSYS2 (you can find it under "All Apps" -> "MSYS2_64bit") </p></li>
+		<li><p>Enter the command "pacman -S nano git" (if it asks for confirmation, select "y")</p></li>
+	  </ul>
     </div>
     <div class="col-md-4">
       <h4 id="shell-macosx">Mac OS X</h4>
@@ -477,68 +445,4 @@ Software Carpentry staff may need to know in your email. -->
   </div>
 </div> <!-- End of 'Git' section. -->
 
-<!--
-<div id="editor"> 
-  <h3>Text Editor</h3>
-
-  <p>
-    When you're writing code, it's nice to have a text editor that is
-    optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which is not famous for being
-    intuitive.  if you accidentally find yourself stuck in it, try
-    typing the escape key, followed by <code>:q!</code> (colon, lower-case 'q',
-    exclamation mark), then hitting Return to return to the shell.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="editor-windows">Windows</h4>
-      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        To install it,
-        download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
-        and double click on the file to run it.
-        <strong>This installer requires an active internet connection.</strong>
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-        <strong>Be aware that you must
-          add its installation directory to your system path.</strong>
-        Please ask your instructor to help you do this.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-macosx">Mac OS X</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
-        for an example on how to open nano.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="editor-linux">Linux</h4>
-      <p>
-        nano is a basic editor and the default that instructors use in the workshop.
-        It should be pre-installed.
-      </p>
-      <p>
-        Others editors that you can use are
-        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
-        <a href="http://kate-editor.org/">Kate</a> or
-        <a href="http://www.sublimetext.com/">Sublime Text</a>.
-      </p>
-    </div>
-  </div>
-</div>
--->
 
